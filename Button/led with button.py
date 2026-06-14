@@ -13,6 +13,5 @@ while True:
     
     if butState==0:
         ledCS= not ledPS
-    
-    led.value(ledCS)
-    ledPS= ledCS
+        led.value(ledCS)
+        ledPS= ledCS
