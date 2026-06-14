@@ -9,9 +9,10 @@ ledCS= 0
 while True:
     butState= myButton.value()
     print(butState)
-    sleep(.75)
     
     if butState==0:
         ledCS= not ledPS
         led.value(ledCS)
         ledPS= ledCS
+        
+    sleep(.2)
